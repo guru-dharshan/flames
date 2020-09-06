@@ -53,18 +53,17 @@ public class MainActivity extends AppCompatActivity {
 
         while(sb3.length()!=1)
         {
-            //int y = c%sb3.length(); ipo run panni pakava? okkkkkk ommala tappu waiiit athu enna thuuuu terlyeee ama call
             int y = f%sb3.length();
             String temp;
 
             if(y!=0)
             {
-                temp = sb3.substring(y)+sb3.substring(0, y-1); // taking substring (counting purpose)
+                temp = sb3.substring(y)+sb3.substring(0, y-1);
 
             }
             else
             {
-                temp = sb3.substring(0, sb3.length()-1); // taking substring (counting purpose)
+                temp = sb3.substring(0, sb3.length()-1);
 
             }
             sb3 = new StringBuilder(temp);
@@ -120,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
             name1.setText("");
             name2.setText("");
+            ans.setText("");
             img.setImageResource(R.drawable.flames);
         }
 
